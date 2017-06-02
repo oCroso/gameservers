@@ -19,24 +19,3 @@
         instance_tags:
           Name: SquadHost
       register: ec2
-      tags:
-        - new
-
-    - wait_for:
-        timeout: 30
-
-    - name: gather squad host facts.
-      ec2_remote_facts:
-        filters:
-          "tag:Name": SquadHost
-        region: us-east-2
-      register: serv_info
-      
-    - name: add new host/hosts to hosts files.
-      lineinfile:
-        path: ~/gameservers/squad/hosts
-        state: present
-        line: '{{ item.private_ip_address }}'
-        insertafter: "[squad]"
-      with_items:
-        - '{{ serv_info.instances }}'
