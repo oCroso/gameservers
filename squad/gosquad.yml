@@ -1,6 +1,8 @@
 ---
   - hosts: squad
+    sudo: yes
     roles:
-        - update
-        - ansible-netdata
-        - buildsquad 
+      - update
+      - ansible-netdata
+      - buildsquad
+  
