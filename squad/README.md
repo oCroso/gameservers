@@ -1,4 +1,4 @@
-##Sqiad Dedicated Server
+## Squad Dedicated Server
 
 This ansible playbook is used to automaticaly provision and deploy a squad dedicated game server to the AWS cloud.
 
