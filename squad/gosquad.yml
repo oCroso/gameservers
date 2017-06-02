@@ -1,0 +1,6 @@
+---
+  - hosts: squad
+    roles:
+        - update
+        - ansible-netdata
+        - buildsquad 
