@@ -23,6 +23,8 @@
       
   - name: install squad server.
     command: '/opt/SquadServer/steam/steamcmd.sh +login anonymous +force_install_dir ../server1 +app_update 403240 validate +quit'
+    tags:
+      - update
 
   - name: copy over admins and moderators.
     template:
