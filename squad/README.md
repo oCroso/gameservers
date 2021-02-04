@@ -1,6 +1,6 @@
 ## Squad Dedicated Server
 
-This ansible playbook is used to automaticaly provision and deploy a squad dedicated game server to the AWS cloud.
+This ansible playbook is used to automaticaly provision and deploy a fully up to date squad dedicated game server to the AWS cloud to whichever region you would like.
 
 
 Usage:
